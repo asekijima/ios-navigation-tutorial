@@ -18,7 +18,8 @@ static int cont = 0;
 -(void) viewDidLoad {
     [super viewDidLoad];
     
-    Item *it = [[[ItemStore getInstancia]todosItens]objectAtIndex:cont];
+    Item *it = [[[ItemStore getInstancia]todosItens]objectAtIndex:cont++];
+    
     
     
     
