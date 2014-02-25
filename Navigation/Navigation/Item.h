@@ -21,6 +21,6 @@
 
 -(id)initComLetra:(NSString *)l eNome:(NSString *)n eImagem:(UIImage *)i;
 
-+(id) itemRandomico;
+//+(id) itemRandomico;
 
 @end
