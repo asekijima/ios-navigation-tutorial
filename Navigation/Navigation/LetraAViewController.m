@@ -8,14 +8,21 @@
 
 #import "LetraAViewController.h"
 #import "LetraBViewController.h"
+#import "Item.h"
+#import "ItemStore.h"
 
 @implementation LetraAViewController
 
-
+static int cont = 0;
 
 -(void) viewDidLoad {
     [super viewDidLoad];
-    self.title = @"A";
+    
+    Item *it = [[[ItemStore getInstancia]todosItens]objectAtIndex:cont];
+    
+    
+    
+    self.title = [it letra];
     UIBarButtonItem *next = [[UIBarButtonItem alloc]
                              initWithBarButtonSystemItem:UIBarButtonSystemItemFastForward target:self action:@selector(next:)];
     self.navigationItem.rightBarButtonItem=next;
@@ -34,7 +41,7 @@
 }
 
 -(void)next:(id)sender {
-    LetraBViewController *proximo = [[LetraBViewController alloc]
+    LetraAViewController *proximo = [[LetraAViewController alloc]
                                               initWithNibName:nil
                                             bundle:NULL];
     [self.navigationController pushViewController:proximo
