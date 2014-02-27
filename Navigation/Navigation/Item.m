@@ -26,16 +26,4 @@
     return self;
 }
 
-//+(id) itemRandomico
-//{
-//    NSString *n = [NSString stringWithFormat:@"nome_%d", rand()%100];
-//    NSString *s = [NSString stringWithFormat:@"sobrenome_%d", rand()%100];
-//    NSString *e = [NSString stringWithFormat:@"endereco_%d", rand()%100];
-//    NSString *t = [NSString stringWithFormat:@"telefone%d", rand()%100];
-//    NSString *c = [NSString stringWithFormat:@"celular_%d", rand()%100];
-//    
-//    Item *it = [[Item alloc] initComNome:n  eSobrenome:s eEndereco:e eTelefone:t eCelular:c];
-//    return it;
-//}
-
 @end
